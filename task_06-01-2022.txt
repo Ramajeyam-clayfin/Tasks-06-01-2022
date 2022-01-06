@@ -1,0 +1,26 @@
+
+From abov code snippet,get the value of c and use array destructuring 
+	and assign it to seperate variable and print them
+
+function add(a,b,...c){
+                console.log("a= "+a);
+                console.log("b= "+b);
+                console.log("c[0]= "+c[0]);
+                console.log("c[1]= "+c[1]);
+                console.log("c[4]= "+c[4]);
+                let [,x,y,z]=c; // Destructuring of Array.
+                console.log("x= "+x);
+                console.log("y= "+y);
+                console.log("z= "+z);
+            }
+add(2,4,6,7,89,34,23,12);
+
+//Output;
+	a= 2
+ 	b= 4
+ 	c[0]= 6
+ 	c[1]= 7
+ 	c[4]= 23
+ 	x= 7
+ 	y= 89
+ 	z= 34
